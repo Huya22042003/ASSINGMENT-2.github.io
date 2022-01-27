@@ -1,0 +1,41 @@
+.rowspanl {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 400px;
+    margin-bottom: 50px;
+}
+.rowspanl_child {
+    height: var(--hihi);
+    background-color: rgba(255, 0, 0, 0.753);
+    padding: 0 5px; 
+    animation-name: hien;
+    animation-play-state:running;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    margin: 10px 0;
+}
+.rowspanl_child > img  {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+@keyframes hien {
+    0% {
+        height: calc(var(--hihi)-50%);
+    }
+    70%,100% {
+        height: var(--hihi);
+    }
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-shadow: 0 0 10px #fff;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
