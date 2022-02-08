@@ -44,8 +44,8 @@ h1.title {
     backface-visibility: hidden;
     border-radius: 10px;
     border-radius: 10px;
-
 }
+
 .content-main:hover .content-container {
     transform: rotateX(0deg);
 
@@ -54,6 +54,8 @@ h1.title {
     height: 100%;
     width: 100%;
     border-radius: 10px;
+    overflow: hidden;
+    animation: nhay .1s infinite;
 
 }
 h1 {
@@ -75,4 +77,35 @@ del {
     color: red;
     line-height: 2;
 }
+.content-icons i {
+    font-size: 30px;
+    margin: 10px;
+    color: #101010d2;
+}
+.content-icons> i:hover {
+    animation-name: lac;
+    animation-play-state:running;
+    animation-timing-function:ease;
+    animation-duration:1.3s;
+}
 
+@keyframes lac {
+    0%,20%,60%,80%,100%{
+        transform: rotateZ(10deg);
+    }
+    10%,30%,70%,90%,50%{
+        transform: rotateZ(-10deg);
+    }
+     40%{
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes nhay {
+    0% {
+        box-shadow: 0 0 50px #fff;
+    }
+    100% {
+        box-shadow: 0 0 50px rgba(255, 255, 255, 0.637);
+    }
+}
