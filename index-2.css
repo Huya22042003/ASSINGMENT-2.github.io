@@ -81,6 +81,7 @@ del {
     font-size: 30px;
     margin: 10px;
     color: #101010d2;
+    cursor: pointer;
 }
 .content-icons> i:hover {
     animation-name: lac;
